@@ -18,7 +18,7 @@ const resetButtonLabel = document.createElement('label')
 nSliderLabel.innerText = "nBranches"
 scaleSliderLabel.innerText = "branchScale"
 sizeSliderLabel.innerText = "branchSize"
-angleSliderLabel.innerText = "Angle"
+angleSliderLabel.innerText = "branchAngle"
 nSlider.setAttribute("type", "range")
 scaleSlider.setAttribute("type", "range")
 sizeSlider.setAttribute("type", "range")
