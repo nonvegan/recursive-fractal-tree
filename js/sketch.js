@@ -33,7 +33,7 @@ scaleSlider.addEventListener('input', () => {
     scale = scaleSlider.value / 100
 })
 sizeSlider.addEventListener('input', () => {
-    length = sizeSlider.value * 4
+    length = sizeSlider.value * 3
 })
 angleSlider.addEventListener('input', () => {
     angle = mapValue(angleSlider.value, 0, 100, 0, Math.PI / 2)
@@ -77,7 +77,7 @@ function setupValues() {
     angleSlider.value = 25
     nTimes = nSlider.value / 10
     scale = scaleSlider.value / 100
-    length = sizeSlider.value * 4
+    length = sizeSlider.value * 3
     angle = mapValue(angleSlider.value, 0, 100, 0, Math.PI / 2)
 }
 
