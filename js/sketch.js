@@ -15,6 +15,7 @@ const sizeSliderLabel = document.createElement('label')
 const angleSliderLabel = document.createElement('label')
 const randomButtonLabel = document.createElement('label')
 const resetButtonLabel = document.createElement('label')
+
 nSliderLabel.innerText = "nBranches"
 scaleSliderLabel.innerText = "branchScale"
 sizeSliderLabel.innerText = "branchSize"
@@ -68,7 +69,6 @@ let nTimes;
 let scale;
 let length;
 let angle;
-setupValues()
 
 function setupValues() {
     nSlider.value = 75
@@ -124,7 +124,10 @@ function line(x1, y1, x2, y2) {
     ctx.stroke()
 }
 
-setInterval(() => {
-    clear()
-    draw()
-}, getMs(60));
+function animate(){
+    clear();
+    draw();
+    requestAnimationFrame(animate);
+}
+setupValues();
+animate();
