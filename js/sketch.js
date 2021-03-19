@@ -100,7 +100,7 @@ function clear() {
     ctx.clearRect(-2 * width, -2 * height, 4 * width, 4 * height)
     ctx.resetTransform();
     ctx.translate(width / 2, height)
-    ctx.strokeStyle = Color.PINK.hex()
+    ctx.strokeStyle = "#f92672";
     ctx.lineWidth = 3
 }
 
